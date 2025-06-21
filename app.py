@@ -2,10 +2,54 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": null,
-   "id": "090fea86",
+   "execution_count": 1,
+   "id": "5401a675",
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Requirement already satisfied: flask in c:\\users\\onoreo\\anaconda3\\lib\\site-packages (1.1.2)\n",
+      "Requirement already satisfied: flask_httpauth in c:\\users\\onoreo\\anaconda3\\lib\\site-packages (4.8.0)\n",
+      "Requirement already satisfied: Jinja2>=2.10.1 in c:\\users\\onoreo\\anaconda3\\lib\\site-packages (from flask) (2.11.3)\n",
+      "Requirement already satisfied: click>=5.1 in c:\\users\\onoreo\\anaconda3\\lib\\site-packages (from flask) (8.0.4)\n",
+      "Requirement already satisfied: Werkzeug>=0.15 in c:\\users\\onoreo\\anaconda3\\lib\\site-packages (from flask) (2.0.3)\n",
+      "Requirement already satisfied: itsdangerous>=0.24 in c:\\users\\onoreo\\anaconda3\\lib\\site-packages (from flask) (2.0.1)\n",
+      "Requirement already satisfied: colorama in c:\\users\\onoreo\\anaconda3\\lib\\site-packages (from click>=5.1->flask) (0.4.5)\n",
+      "Requirement already satisfied: MarkupSafe>=0.23 in c:\\users\\onoreo\\anaconda3\\lib\\site-packages (from Jinja2>=2.10.1->flask) (2.0.1)\n",
+      " * Serving Flask app \"__main__\" (lazy loading)\n",
+      " * Environment: production\n",
+      "\u001b[31m   WARNING: This is a development server. Do not use it in a production deployment.\u001b[0m\n",
+      "\u001b[2m   Use a production WSGI server instead.\u001b[0m\n",
+      " * Debug mode: on\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      " * Restarting with watchdog (windowsapi)\n"
+     ]
+    },
+    {
+     "ename": "SystemExit",
+     "evalue": "1",
+     "output_type": "error",
+     "traceback": [
+      "An exception has occurred, use %tb to see the full traceback.\n",
+      "\u001b[1;31mSystemExit\u001b[0m\u001b[1;31m:\u001b[0m 1\n"
+     ]
+    },
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "C:\\Users\\onoreo\\anaconda3\\lib\\site-packages\\IPython\\core\\interactiveshell.py:3465: UserWarning: To exit: use 'exit', 'quit', or Ctrl-D.\n",
+      "  warn(\"To exit: use 'exit', 'quit', or Ctrl-D.\", stacklevel=1)\n"
+     ]
+    }
+   ],
    "source": [
     "!pip install flask flask_httpauth\n",
     "\n",
@@ -120,20 +164,20 @@
     "@app.route('/')\n",
     "def home():\n",
     "    return \"Hello from Render!\"\n",
-    "\n",
+    "    \n",
     "if __name__ == \"__main__\":\n",
     "    import os\n",
     "    from waitress import serve\n",
     "    port = int(os.environ.get(\"PORT\", 5000))\n",
-    "    app.run(host='0.0.0.0', port=5000, debug=True)\n",
     "    serve(app, host='0.0.0.0', port=port)\n",
+    "\n",
     "    \n"
    ]
   },
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "d1ffe1be",
+   "id": "7eedca80",
    "metadata": {},
    "outputs": [],
    "source": []
