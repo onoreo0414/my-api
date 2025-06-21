@@ -3,7 +3,7 @@
   {
    "cell_type": "code",
    "execution_count": 1,
-   "id": "5401a675",
+   "id": "7e35ca32",
    "metadata": {},
    "outputs": [
     {
@@ -66,9 +66,9 @@
     "\n",
     "# テスト用アカウント\n",
     "users_db[\"TaroYamada\"] = {\n",
-    "    \"password\": generate_password_hash(\"OnoReo20010414\"),\n",
-    "    \"nickname\": \"Ono Reo\",\n",
-    "    \"comment\": \"Hello!\"\n",
+    "    \"password\": generate_password_hash(\"PaSSwđ4TY\"),\n",
+    "    \"nickname\": \"たろー\",\n",
+    "    \"comment\": \"僕は元気です\"\n",
     "}\n",
     "\n",
     "# Base64認証用\n",
@@ -177,7 +177,7 @@
   {
    "cell_type": "code",
    "execution_count": null,
-   "id": "7eedca80",
+   "id": "77cc9767",
    "metadata": {},
    "outputs": [],
    "source": []
